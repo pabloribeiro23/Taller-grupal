@@ -34,7 +34,7 @@ botonAgregar.addEventListener("click", ()=> {
 function actualizarContenedor(array) {
     contenedor.innerHTML = "";
  array.forEach(element => { 
-    contenedor.innerHTML += `<li>${element} </li>`
+    contenedor.innerHTML += `<li>${element} </li><hr>`
     
  });
 }
