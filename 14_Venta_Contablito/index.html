@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Barraca Ladrillos SRL</h1>
+    <div id="register">
+        <p class="regProducts">Registrar producto</p>
+        <form method="post" action="#">
+            <div>
+                <label for="regID">ID:</label>
+                <input id="regID" name="regID" type="text">
+                <br>
+                <label for="regName">Nombre:</label>
+                <input id="regName" name="regName" type="text">
+                <br>
+                <label for="regDesc">Descripción:</label>
+                <textarea name="regDesc" id="regDesc" cols="30" rows="3"></textarea>
+                <br>
+                <label for="regStock">Stock:</label>
+                <input type="number" name="regStock" id="regStock">
+                <br>
+                <label for="regPrecio">Precio:</label>
+                <input type="number" name="regPrecio" id="regPrecio">                
+            </div>          
+        </form>
+    </div>
+
+    <h2>Movimientos</h2>
+    <div id="movement">
+        <p class="regProducts">Registrar movimientos</p>
+        <form method="post" action="#">
+            <div>
+                <label for="movType">Tipo de movimiento:</label>
+                <select id="movType" name="movType">
+                    <option value="Venta">Venta</option>
+                    <option value="Compra">Compra</option>
+                </select>
+                <br>
+                <label for="movDate">Fecha:</label>
+                <input id="movDate" name="movDate" type="date">
+                <br>
+                <label for="movID">ID Producto:</label>
+                <input type="number" name="movID" id="movID">
+                <br>
+                <label for="movAmount">Cantidad:</label>
+                <input type="number" name="movAmount" id="movAmount">
+                <br>
+                <label for="movUnitCost">Costo unitario:</label>
+                <input type="number" name="movUnitCost" id="movUnitCost">
+                <br>
+                <label for="movSubtotal">Subtotal:</label>
+                <input type="number" name="movSubtotal" id="movSubtotal"> 
+                <br>
+                <label for="movIVA">IVA:</label>
+                <input type="number" name="movIVA" id="movIVA"> <br>
+                <label for="movTotal">TOTAL:</label>
+                <input type="number" name="movTotal" id="movTotal">                              
+            </div>          
+        </form>
+    </div>
+    
+</body>
+</html>
